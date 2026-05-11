@@ -25,3 +25,13 @@ replay_pid*
 
 .idea/
 
+build/
+test-output/
+allure-results/
+allure-report/
+
+.env
+*.env
+config-local.properties
+secrets.properties
+
