@@ -16,14 +16,14 @@
 ## 🛠 Технологический стек
 
 | Категория | Технология |
-|-----------|------------|
+|-----------|-------|
 | Язык программирования | Java 11+ |
 | UI-тестирование | Selenide |
 | API-тестирование | Rest Assured |
-| Сборка проекта | Maven / Gradle |
-| Тестовый фреймворк | JUnit 5 / TestNG |
+| Сборка проекта | Maven |
+| Тестовый фреймворк | JUnit 5 |
 | Отчеты | Allure Report |
-| Логирование | SLF4J + Logback |
+| Логирование | SLF4J |
 | CI/CD | GitHub Actions / Jenkins |
 
 ## 📁 Структура проекта
@@ -53,7 +53,7 @@
 ## ✅ Требования
 
 - JDK 11 или выше
-- Maven 3.8+ или Gradle 7+
+- Maven 3.8+
 - Браузер (Chrome, Firefox) или Docker для запуска в контейнере
 
 ## 🚀 Установка и настройка
@@ -68,9 +68,6 @@
    ```bash
    # Для Maven
    mvn clean install
-
-   # Для Gradle
-   gradle build
    ```
 
 3. Настройте переменные окружения или отредактируйте файл `application.properties`.
@@ -81,36 +78,24 @@
 ```bash
 # Maven
 mvn test
-
-# Gradle
-gradle test
 ```
 
 ### Только UI тесты
 ```bash
 # Maven
 mvn test -Dgroups=ui
-
-# Gradle
-gradle test -Dgroups=ui
 ```
 
 ### Только API тесты
 ```bash
 # Maven
 mvn test -Dgroups=api
-
-# Gradle
-gradle test -Dgroups=api
 ```
 
 ### Запуск с тегом
 ```bash
 # Maven
 mvn test -Dtest="*SmokeTest"
-
-# Gradle
-gradle test --tests "*SmokeTest"
 ```
 
 ## ⚙️ Конфигурация
@@ -147,18 +132,12 @@ mvn test -Dbrowser=firefox -Dheadless=false
 ```bash
 # Maven
 mvn allure:report
-
-# Gradle
-gradle allureReport
 ```
 
 ### Открыть отчет
 ```bash
 # Maven
 mvn allure:serve
-
-# Gradle
-gradle allureServe
 ```
 
 ## 🔄 CI/CD
@@ -185,15 +164,3 @@ jobs:
       - name: Allure Report
         uses: simple-elf/allure-report-action@master
 ```
-
-## 📝 Лицензия
-
-Этот проект распространяется под лицензией MIT.
-
-## 👥 Авторы
-
-- Ваше Имя — *initial work*
-
-## 🤝 Вклад
-
-Contributions are welcome! Пожалуйста, создавайте Pull Requests для любых улучшений.
