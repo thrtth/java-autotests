@@ -1,73 +1,27 @@
-```gitignore
-# Compiled and binary files
-*.pyc
-__pycache__/
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
+# Compiled class file
+*.class
 
-# Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-.env.*
-
-# Build artifacts
-dist/
-build/
-target/
+# Log file
 *.log
-*.tmp
-*.swp
 
-# Editors and IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
+# BlueJ files
+*.ctxt
 
-# System files
-.DS_Store
-Thumbs.db
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Python specific
-*.pyc
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-
-# Archives
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
 *.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
 *.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-```
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+.idea/
+
